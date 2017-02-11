@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Express Starter</title>
+        <title><%= title %></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="/css/main.css" rel="stylesheet">
     </head>
     <body>
 
+    <section class="body">
+
         <nav>
             <ul class="list-inline">
-                <li><a href="/">Home</a></li>
+                <li><a <% if (title === 'Home'){ %> class="active" <% } %> href="/">Home</a></li>
+                <li><a <% if (title === 'About'){ %> class="active" <% } %> href="/about">About</a></li>
             </ul>
         </nav>
 
 
-    <section>
+
         <!--Load page body here-->
         <%- body %>
+
     </section>
 
 
 
     <footer>
-    <small>Kacper Bawol NE Starter 1.2</small>
+    <small>Kacper Bawol 2017 v.01</small>
     </footer>
 
 

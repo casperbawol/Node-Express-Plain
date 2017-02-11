@@ -3,6 +3,12 @@ body {
   color: black;
   font-family: monospace;
 }
+.body {
+  max-width: 60%;
+  margin: 0 auto;
+  left: auto;
+  right: auto;
+}
 ul.list-inline {
   list-style: none;
   margin-left: -40px;
@@ -18,9 +24,18 @@ li #remove {
 li:hover #remove {
   opacity: 1;
 }
+nav {
+  padding: 20px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
 nav a {
   text-decoration: none;
   color: blue;
+  opacity: 0.5;
+}
+nav a.active {
+  opacity: 1;
 }
 h1 {
   color: rgba(0, 0, 0, 0.2);
